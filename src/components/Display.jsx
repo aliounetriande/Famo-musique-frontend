@@ -4,6 +4,7 @@ import DisplayHome from './DisplayHome'
 import DisplayPlaylist from './DisplayPlaylist'
 import Login from './Login'
 import Register from './Register'
+import CreatePlaylist from './CreatePlaylistForm'
 
 const Display = () => {
 
@@ -20,6 +21,7 @@ const Display = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<Register />} />
         <Route path="/playlist/:id" element={<DisplayPlaylist />} />
+        <Route path='/create-playlist' element={<CreatePlaylist />} />
        </Routes>
     </div>
   )
